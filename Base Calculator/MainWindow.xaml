@@ -97,7 +97,8 @@
             <StackPanel Margin="0,7,-3,-19" Orientation="Vertical">
                 <TextBox
                     x:Name="inputTextBox"
-                    Height="47"
+                    Height="61"
+                    TextChanged="inputTextBox_TextChanged"
                     materialDesign:HintAssist.Hint="Input"
                     BorderBrush="{DynamicResource SecondaryAccent}"
                     BorderThickness="0,0,0,1.5"
@@ -126,6 +127,7 @@
                         Foreground="{DynamicResource PrimaryDarkDay}"
                         Maximum="27"
                         Minimum="2"
+                        ValueChanged="slider_ValueChanged"
                         Style="{StaticResource MaterialDesignDiscreteSlider}" />
 
                     <Slider
@@ -193,7 +195,7 @@
                 <Button
                     x:Name="CalcBtn"
                     Height="53"
-                    Margin="100,60,100,0"
+                    Margin="100,45,100,0"
                     VerticalAlignment="Center"
                     materialDesign:ButtonProgressAssist.IsIndeterminate="True"
                     materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"

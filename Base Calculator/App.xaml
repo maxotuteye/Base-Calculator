@@ -31,5 +31,7 @@
                 <GradientStop Offset="0.65" Color="#FF4527a0" />
             </LinearGradientBrush>
         </ResourceDictionary>
+
+       
     </Application.Resources>
 </Application>
